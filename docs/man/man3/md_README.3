@@ -1,4 +1,4 @@
-.TH "md_README" 3 "Mon Mar 6 2023" "Version v1.0.0" "TTT" \" -*- nroff -*-
+.TH "md_README" 3 "Tue Mar 7 2023" "Version v1.0.0" "TTT" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -46,9 +46,32 @@ $ sudo mv /usr/local/lib/pkgconfig/TTT\&.pc /usr/lib/pkgconfig/
 .PP
 .PP
 The latter commands will install the library system-wide so you can use it anywhere without having to keep a \fC\&.a\fP file in your \fClib\fP folder\&.
+.SH "Usage"
+.PP
+A basic setup looks something like this (main\&.cpp):
+.PP
+.PP
+.nf
+#include <TTT/TTT\&.hpp>
+
+#include <string>
+
+constexpr int WINDOW_WIDTH         = 800;  // You don't have to write it exactly like here\&.
+constexpr int WINDOW_HEIGHT        = 600;  // You don't have to write it exactly like here\&.
+constexpr std::string WINDOW_TITLE = "TTT" // You don't have to write it exactly like here\&.
+
+int main()
+{
+    TTT::Window::verbose                      = true; // True or false for debug output\&.
+    TTT::Window::toggleFPS                    = true; // True or false for toggling FPS at startup\&.
+    TTT::Window::shouldCreateDefaultEventLoop = true; // True or false for creating a default immutable event loop\&.
+
+    TTT::Window ttt(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE /* optional */);
+
+    return 0;
+}
+.fi
+.PP
 .SH "Documentation"
 .PP
-Documentation is work in progress but you can already find it at https://reallysmooll.github.io/TTT\&.
-.SH "Third party projects used"
-.PP
-\fCDoxygen Awesome\fP - jothepro 
+Documentation is work in progress but you can already find it at https://reallysmooll.github.io/TTT-docs\&. 

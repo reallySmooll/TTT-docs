@@ -27,7 +27,6 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -131,18 +130,41 @@ Actually building</h2>
 <div class="line">$ sudo mv /usr/local/lib/pkgconfig/TTT.pc /usr/lib/pkgconfig/</div>
 </div><!-- fragment --><p>The latter commands will install the library system-wide so you can use it anywhere without having to keep a <code>.a</code> file in your <code>lib</code> folder.</p>
 <h1><a class="anchor" id="autotoc_md4"></a>
+Usage</h1>
+<p>A basic setup looks something like this (main.cpp):</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="TTT_8hpp.html">TTT/TTT.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">int</span> WINDOW_WIDTH         = 800;  <span class="comment">// You don&#39;t have to write it exactly like here.</span></div>
+<div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">int</span> WINDOW_HEIGHT        = 600;  <span class="comment">// You don&#39;t have to write it exactly like here.</span></div>
+<div class="line"><span class="keyword">constexpr</span> std::string WINDOW_TITLE = <span class="stringliteral">&quot;TTT&quot;</span> <span class="comment">// You don&#39;t have to write it exactly like here.</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_variable" href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a>                      = <span class="keyword">true</span>; <span class="comment">// True or false for debug output.</span></div>
+<div class="line">    <a class="code hl_variable" href="classTTT_1_1Window.html#a324563bc8d1f6106c433a56943c0f092">TTT::Window::toggleFPS</a>                    = <span class="keyword">true</span>; <span class="comment">// True or false for toggling FPS at startup.</span></div>
+<div class="line">    <a class="code hl_variable" href="classTTT_1_1Window.html#a425dd801b07647d5a6a6790b2516943c">TTT::Window::shouldCreateDefaultEventLoop</a> = <span class="keyword">true</span>; <span class="comment">// True or false for creating a default immutable event loop.</span></div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="classTTT_1_1Window.html">TTT::Window</a> ttt(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE <span class="comment">/* optional */</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aTTT_8hpp_html"><div class="ttname"><a href="TTT_8hpp.html">TTT.hpp</a></div><div class="ttdoc">This is the header file and where everything is declared.</div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html"><div class="ttname"><a href="classTTT_1_1Window.html">TTT::Window</a></div><div class="ttdoc">The &quot;Window&quot; class initializes the window and everything else (like the default event loop).</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00025">TTT.hpp:26</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_a324563bc8d1f6106c433a56943c0f092"><div class="ttname"><a href="classTTT_1_1Window.html#a324563bc8d1f6106c433a56943c0f092">TTT::Window::toggleFPS</a></div><div class="ttdeci">static bool toggleFPS</div><div class="ttdoc">The user can choose whether to show the FPS at startup or require the &quot;F3&quot; key to be pressed to show ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00034">TTT.hpp:34</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_a425dd801b07647d5a6a6790b2516943c"><div class="ttname"><a href="classTTT_1_1Window.html#a425dd801b07647d5a6a6790b2516943c">TTT::Window::shouldCreateDefaultEventLoop</a></div><div class="ttdeci">static bool shouldCreateDefaultEventLoop</div><div class="ttdoc">The user can choose whether to create a default immutable event loop or not.</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00035">TTT.hpp:35</a></div></div>
+<div class="ttc" id="aclassTTT_1_1Window_html_ad350d516fc88f079054e877afdc3cdf2"><div class="ttname"><a href="classTTT_1_1Window.html#ad350d516fc88f079054e877afdc3cdf2">TTT::Window::verbose</a></div><div class="ttdeci">static bool verbose</div><div class="ttdoc">The user can choose whether to show the debug output in the terminal as well as log to a file called ...</div><div class="ttdef"><b>Definition:</b> <a href="TTT_8hpp_source.html#l00033">TTT.hpp:33</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 Documentation</h1>
-<p>Documentation is work in progress but you can already find it at <a href="https://reallysmooll.github.io/TTT">https://reallysmooll.github.io/TTT</a>.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Third party projects used</h1>
-<p><a href="https://www.github.com/jothepro/doxygen-awesome-css">Doxygen Awesome</a> - jothepro </p>
+<p>Documentation is work in progress but you can already find it at <a href="https://reallysmooll.github.io/TTT-docs">https://reallysmooll.github.io/TTT-docs</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 6 2023 23:42:32 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 22:24:27 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

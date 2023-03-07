@@ -27,7 +27,6 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -142,6 +141,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a425dd801b07647d5a6a6790b2516943c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTT_1_1Window.html#a425dd801b07647d5a6a6790b2516943c">shouldCreateDefaultEventLoop</a></td></tr>
 <tr class="memdesc:a425dd801b07647d5a6a6790b2516943c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user can choose whether to create a default immutable event loop or not.  <br /></td></tr>
 <tr class="separator:a425dd801b07647d5a6a6790b2516943c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcd7d74ddca505fe5976abcf81b29d8"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTTT_1_1Window.html#aafcd7d74ddca505fe5976abcf81b29d8">defaultEventLoopFontFilename</a> = &quot;resources/fonts/04B_30__.TTF&quot;</td></tr>
+<tr class="memdesc:aafcd7d74ddca505fe5976abcf81b29d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional variable for setting default event loop font path.  <br /></td></tr>
+<tr class="separator:aafcd7d74ddca505fe5976abcf81b29d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -211,7 +213,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="TTT__Window_8cpp_source.html#l00035">35</a> of file <a class="el" href="TTT__Window_8cpp_source.html">TTT_Window.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTT__Window_8cpp_source.html#l00038">38</a> of file <a class="el" href="TTT__Window_8cpp_source.html">TTT_Window.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +235,7 @@ Private Member Functions</h2></td></tr>
 <p>The "Window" destructor does nothing except for logging that the window is being destroyed. </p>
 <p>The "Window" destructor does nothing because it is already done by SFML when using the "window.close()" function. </p>
 
-<p class="definition">Definition at line <a class="el" href="TTT__Window_8cpp_source.html#l00055">55</a> of file <a class="el" href="TTT__Window_8cpp_source.html">TTT_Window.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTT__Window_8cpp_source.html#l00058">58</a> of file <a class="el" href="TTT__Window_8cpp_source.html">TTT_Window.cpp</a>.</p>
 
 </div>
 </div>
@@ -264,11 +266,38 @@ Private Member Functions</h2></td></tr>
 <p>Creates the default immutable event loop. </p>
 <p>Creates the default immutable event loop that can be turned on or off using a boolean called "shouldCreateDefaultEventLoop". </p>
 
-<p class="definition">Definition at line <a class="el" href="TTT__Window_8cpp_source.html#l00058">58</a> of file <a class="el" href="TTT__Window_8cpp_source.html">TTT_Window.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TTT__Window_8cpp_source.html#l00061">61</a> of file <a class="el" href="TTT__Window_8cpp_source.html">TTT_Window.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aafcd7d74ddca505fe5976abcf81b29d8" name="aafcd7d74ddca505fe5976abcf81b29d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcd7d74ddca505fe5976abcf81b29d8">&#9670;&#160;</a></span>defaultEventLoopFontFilename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TTT::Window::defaultEventLoopFontFilename = &quot;resources/fonts/04B_30__.TTF&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Optional variable for setting default event loop font path. </p>
+<p>If left untouched, the variable will be set to a default value of "resources/fonts/04B_30__.TTF". </p>
+
+<p class="definition">Definition at line <a class="el" href="TTT_8hpp_source.html#l00037">37</a> of file <a class="el" href="TTT_8hpp_source.html">TTT.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a425dd801b07647d5a6a6790b2516943c" name="a425dd801b07647d5a6a6790b2516943c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a425dd801b07647d5a6a6790b2516943c">&#9670;&#160;</a></span>shouldCreateDefaultEventLoop</h2>
 
@@ -381,7 +410,7 @@ If false, does not display debug output of the library but logs them to a file c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceTTT.html">TTT</a></li><li class="navelem"><a class="el" href="classTTT_1_1Window.html">Window</a></li>
-    <li class="footer">Generated on Mon Mar 6 2023 23:42:32 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 22:24:27 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -29,7 +29,9 @@ static bool \mbox{\hyperlink{classTTT_1_1Window_ad350d516fc88f079054e877afdc3cdf
 static bool \mbox{\hyperlink{classTTT_1_1Window_a324563bc8d1f6106c433a56943c0f092}{toggle\+FPS}}
 \begin{DoxyCompactList}\small\item\em The user can choose whether to show the FPS at startup or require the \char`\"{}\+F3\char`\"{} key to be pressed to show it. \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}{should\+Create\+Default\+Event\+Loop}}
-\begin{DoxyCompactList}\small\item\em The user can choose whether to create a default immutable event loop or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The user can choose whether to create a default immutable event loop or not. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classTTT_1_1Window_aafcd7d74ddca505fe5976abcf81b29d8}{default\+Event\+Loop\+Font\+Filename}} = \char`\"{}resources/fonts/04B\+\_\+30\+\_\+\+\_\+.\+TTF\char`\"{}
+\begin{DoxyCompactList}\small\item\em Optional variable for setting default event loop font path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -72,7 +74,7 @@ The \char`\"{}\+Window\char`\"{} constructor used to create the window using sf\
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
+Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
 
 \mbox{\Hypertarget{classTTT_1_1Window_ab842a991144ae10bb4a8233eb8e9169a}\label{classTTT_1_1Window_ab842a991144ae10bb4a8233eb8e9169a}} 
 \index{TTT::Window@{TTT::Window}!````~Window@{$\sim$Window}}
@@ -86,7 +88,7 @@ The \char`\"{}\+Window\char`\"{} destructor does nothing except for logging that
 
 The \char`\"{}\+Window\char`\"{} destructor does nothing because it is already done by SFML when using the \char`\"{}window.\+close()\char`\"{} function. 
 
-Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
+Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
 
 
 
@@ -103,11 +105,25 @@ Creates the default immutable event loop.
 
 Creates the default immutable event loop that can be turned on or off using a boolean called \char`\"{}should\+Create\+Default\+Event\+Loop\char`\"{}. 
 
-Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
+Definition at line \mbox{\hyperlink{TTT__Window_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{TTT__Window_8cpp_source}{TTT\+\_\+\+Window.\+cpp}}.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTTT_1_1Window_aafcd7d74ddca505fe5976abcf81b29d8}\label{classTTT_1_1Window_aafcd7d74ddca505fe5976abcf81b29d8}} 
+\index{TTT::Window@{TTT::Window}!defaultEventLoopFontFilename@{defaultEventLoopFontFilename}}
+\index{defaultEventLoopFontFilename@{defaultEventLoopFontFilename}!TTT::Window@{TTT::Window}}
+\doxysubsubsection{\texorpdfstring{defaultEventLoopFontFilename}{defaultEventLoopFontFilename}}
+{\footnotesize\ttfamily std\+::string TTT\+::\+Window\+::default\+Event\+Loop\+Font\+Filename = \char`\"{}resources/fonts/04B\+\_\+30\+\_\+\+\_\+.\+TTF\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Optional variable for setting default event loop font path. 
+
+If left untouched, the variable will be set to a default value of \char`\"{}resources/fonts/04\+B\+\_\+30\+\_\+\+\_\+.\+TTF\char`\"{}. 
+
+Definition at line \mbox{\hyperlink{TTT_8hpp_source_l00037}{37}} of file \mbox{\hyperlink{TTT_8hpp_source}{TTT.\+hpp}}.
+
 \mbox{\Hypertarget{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}\label{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}} 
 \index{TTT::Window@{TTT::Window}!shouldCreateDefaultEventLoop@{shouldCreateDefaultEventLoop}}
 \index{shouldCreateDefaultEventLoop@{shouldCreateDefaultEventLoop}!TTT::Window@{TTT::Window}}

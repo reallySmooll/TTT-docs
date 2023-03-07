@@ -1,4 +1,4 @@
-.TH "TTT::Window" 3 "Mon Mar 6 2023" "Version v1.0.0" "TTT" \" -*- nroff -*-
+.TH "TTT::Window" 3 "Tue Mar 7 2023" "Version v1.0.0" "TTT" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -44,6 +44,10 @@ TTT::Window \- The 'Window' class initializes the window and everything else (li
 .RI "static bool \fBshouldCreateDefaultEventLoop\fP"
 .br
 .RI "The user can choose whether to create a default immutable event loop or not\&. "
+.ti -1c
+.RI "static std::string \fBdefaultEventLoopFontFilename\fP = 'resources/fonts/04B_30__\&.TTF'"
+.br
+.RI "Optional variable for setting default event loop font path\&. "
 .in -1c
 .SS "Private Member Functions"
 
@@ -82,13 +86,13 @@ The 'Window' constructor used to create the window using sf::RenderWindow\&.
 .PP
 
 .PP
-Definition at line \fB35\fP of file \fBTTT_Window\&.cpp\fP\&.
+Definition at line \fB38\fP of file \fBTTT_Window\&.cpp\fP\&.
 .SS "TTT::Window::~Window ()"
 
 .PP
 The 'Window' destructor does nothing except for logging that the window is being destroyed\&. The 'Window' destructor does nothing because it is already done by SFML when using the 'window\&.close()' function\&. 
 .PP
-Definition at line \fB55\fP of file \fBTTT_Window\&.cpp\fP\&.
+Definition at line \fB58\fP of file \fBTTT_Window\&.cpp\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void TTT::Window::defaultEventLoop ()\fC [private]\fP"
@@ -96,9 +100,15 @@ Definition at line \fB55\fP of file \fBTTT_Window\&.cpp\fP\&.
 .PP
 Creates the default immutable event loop\&. Creates the default immutable event loop that can be turned on or off using a boolean called 'shouldCreateDefaultEventLoop'\&. 
 .PP
-Definition at line \fB58\fP of file \fBTTT_Window\&.cpp\fP\&.
+Definition at line \fB61\fP of file \fBTTT_Window\&.cpp\fP\&.
 .SH "Member Data Documentation"
 .PP 
+.SS "std::string TTT::Window::defaultEventLoopFontFilename = 'resources/fonts/04B_30__\&.TTF'\fC [static]\fP"
+
+.PP
+Optional variable for setting default event loop font path\&. If left untouched, the variable will be set to a default value of 'resources/fonts/04B_30__\&.TTF'\&. 
+.PP
+Definition at line \fB37\fP of file \fBTTT\&.hpp\fP\&.
 .SS "bool TTT::Window::shouldCreateDefaultEventLoop\fC [static]\fP"
 
 .PP

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['green_0',['GREEN',['../classTTT_1_1Log.html#aac938554ea67a961e5c7680aa1e1d557',1,'TTT::Log']]]
+  ['fpstext_0',['fpsText',['../namespaceTTT.html#ad4325625f40efdd19cd7df75bf49f71e',1,'TTT']]],
+  ['framecount_1',['frameCount',['../namespaceTTT.html#a0da9fc7612067e50ad9b63642fb97265',1,'TTT']]]
 ];

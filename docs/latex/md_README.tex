@@ -33,6 +33,30 @@ You can also do\+:
 \end{DoxyCode}
 
 
-The latter commands will install the library system-\/wide so you can use it anywhere without having to keep a {\ttfamily .a} file in your {\ttfamily lib} folder.\hypertarget{md_README_autotoc_md4}{}\doxysection{Documentation}\label{md_README_autotoc_md4}
-Documentation is work in progress but you can already find it at \href{https://reallysmooll.github.io/TTT}{\texttt{ https\+://reallysmooll.\+github.\+io/\+TTT}}.\hypertarget{md_README_autotoc_md5}{}\doxysection{Third party projects used}\label{md_README_autotoc_md5}
-\href{https://www.github.com/jothepro/doxygen-awesome-css}{\texttt{ Doxygen Awesome}} -\/ jothepro 
+The latter commands will install the library system-\/wide so you can use it anywhere without having to keep a {\ttfamily .a} file in your {\ttfamily lib} folder.\hypertarget{md_README_autotoc_md4}{}\doxysection{Usage}\label{md_README_autotoc_md4}
+A basic setup looks something like this (main.\+cpp)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{TTT_8hpp}{TTT/TTT.hpp}}>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ WINDOW\_WIDTH\ \ \ \ \ \ \ \ \ =\ 800;\ \ \textcolor{comment}{//\ You\ don't\ have\ to\ write\ it\ exactly\ like\ here.}}
+\DoxyCodeLine{\textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ WINDOW\_HEIGHT\ \ \ \ \ \ \ \ =\ 600;\ \ \textcolor{comment}{//\ You\ don't\ have\ to\ write\ it\ exactly\ like\ here.}}
+\DoxyCodeLine{\textcolor{keyword}{constexpr}\ std::string\ WINDOW\_TITLE\ =\ \textcolor{stringliteral}{"{}TTT"{}}\ \textcolor{comment}{//\ You\ don't\ have\ to\ write\ it\ exactly\ like\ here.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{classTTT_1_1Window_ad350d516fc88f079054e877afdc3cdf2}{TTT::Window::verbose}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ True\ or\ false\ for\ debug\ output.}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{classTTT_1_1Window_a324563bc8d1f6106c433a56943c0f092}{TTT::Window::toggleFPS}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ True\ or\ false\ for\ toggling\ FPS\ at\ startup.}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{classTTT_1_1Window_a425dd801b07647d5a6a6790b2516943c}{TTT::Window::shouldCreateDefaultEventLoop}}\ =\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ True\ or\ false\ for\ creating\ a\ default\ immutable\ event\ loop.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{classTTT_1_1Window}{TTT::Window}}\ ttt(WINDOW\_WIDTH,\ WINDOW\_HEIGHT,\ WINDOW\_TITLE\ \textcolor{comment}{/*\ optional\ */});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md5}{}\doxysection{Documentation}\label{md_README_autotoc_md5}
+Documentation is work in progress but you can already find it at \href{https://reallysmooll.github.io/TTT-docs}{\texttt{ https\+://reallysmooll.\+github.\+io/\+TTT-\/docs}}. 

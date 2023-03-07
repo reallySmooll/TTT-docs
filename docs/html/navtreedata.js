@@ -30,8 +30,8 @@ var NAVTREE =
         [ "Dependencies", "md_README.html#autotoc_md2", null ],
         [ "Actually building", "md_README.html#autotoc_md3", null ]
       ] ],
-      [ "Documentation", "md_README.html#autotoc_md4", null ],
-      [ "Third party projects used", "md_README.html#autotoc_md5", null ]
+      [ "Usage", "md_README.html#autotoc_md4", null ],
+      [ "Documentation", "md_README.html#autotoc_md5", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['fpstext_0',['fpsText',['../namespaceTTT.html#ad4325625f40efdd19cd7df75bf49f71e',1,'TTT']]],
-  ['framecount_1',['frameCount',['../namespaceTTT.html#a0da9fc7612067e50ad9b63642fb97265',1,'TTT']]]
+  ['error_0',['ERROR',['../classTTT_1_1Log.html#a4c5168e8b73e2d972f92dab898f4427b',1,'TTT::Log']]]
 ];
