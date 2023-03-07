@@ -13,7 +13,6 @@
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
 <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-  DoxygenAwesomeInteractiveToc.hideMobileMenu = false;
   DoxygenAwesomeDarkModeToggle.init();
   DoxygenAwesomeInteractiveToc.init();
 </script>
@@ -27,6 +26,8 @@
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="dropdown.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -35,7 +36,14 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TTT<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">TTT<span id="projectnumber">&#160;v1.0.1</span>
+     <!--BEGIN version select -->
+     <div class="dropdown" id="projectnumber">
+       <button class="dropbtn">v1.0.1</button>
+       <div class="dropdown-content"></div>
+     </div>
+     <script type="text/javascript" src="selectversion.js"></script>
+     <!--END version select-->
    </div>
    <div id="projectbrief">TTT is a simple wrapper around the SFML library.</div>
   </td>
@@ -118,7 +126,7 @@ $(document).ready(function(){initNavTree('namespacemembers.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 7 2023 22:24:27 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Tue Mar 7 2023 23:07:05 for TTT by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>
