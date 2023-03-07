@@ -50,7 +50,7 @@ There are to ways in which you can contribute:
 ### Making the site look prettier
 The TTT documentation uses a third party project called `Doxygen Awesome`, Which basically makes the site prettier automatically but it also has a ton of customization with which you can help.
 
-The directory `docs/css/` contains a file called `custom.css` which is used to customize Doxygen Awesome. If you'd like to help, read up on the documentation of Doxygen Awesome and edit the `custom.css` file then commit the changes and make a pull request. I will review it and maybe you'll get your request pulled.
+The directory `docs/` contains a file called `custom.css` which is used to customize Doxygen Awesome. If you'd like to help, read up on the documentation of Doxygen Awesome and edit the `custom.css` file then commit the changes and make a pull request. I will review it and maybe you'll get your request pulled.
 
 ### Changing the documentation
 There's not much to it really. Go to any of the TTT library files and look for any comments starting with a `/**` or a `///<`. These are comments that Doxygen uses to generate the documentation. Next, change them to add more information or change the information or remove some information, whatever. Commit your changes, make a pull request and wait.
